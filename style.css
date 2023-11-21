@@ -1,0 +1,153 @@
+/* Estilo global para todos los elementos */
+* {
+  margin: 0;
+  /* Elimina márgenes predeterminados */
+  padding: 0;
+  /* Elimina relleno predeterminado */
+  box-sizing: border-box;
+  /* Ajusta el modelo de caja */
+  font-family: sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+/* HEADER */
+header {
+  position: fixed;
+  background-color: khaki;
+  /* Color de fondo en khaki */
+  display: flex;
+  /* Contenedor flexible */
+  flex-direction: column;
+  align-items: center;
+  /* Alinea verticalmente al centro */
+  padding: 20px;
+  /* Relleno de 20px alrededor del encabezado */
+  height: 23vh;
+  width: 100vw;
+  justify-content: space-between;
+}
+
+header div {
+  display: flex;
+  align-items: center;
+}
+
+header div img {
+  width: 110px;
+  /* Ancho de imagen de 50px */
+}
+
+header div h1 {
+  color: rgb(255, 145, 0);
+  /* Color del texto en rojo */
+  font-family: sans-serif;
+  /* Fuente sans-serif */
+  font-size: 30px;
+  /* Tamaño de fuente al 30px */
+  padding: 20px;
+}
+
+header nav ul {
+  list-style-type: none;
+  /* Elimina los marcadores de lista */
+  display: flex;
+  /* Contenedor flexible */
+  align-items: center;
+  /* Alinea verticalmente al centro */
+  padding: 0;
+  /* Elimina el espacio en blanco predeterminado */
+}
+
+nav ul li {
+  display: inline;
+  /* Elementos de lista en línea */
+  margin-left: 10px;
+  /* Margen izquierdo de 10px para separar los enlaces */
+  justify-content: flex-end;
+  /* Alinea elementos a la derecha */
+}
+
+header nav ul li a {
+  text-decoration: none;
+  /* Elimina el subrayado de enlaces */
+  color: black;
+  /* Color del texto en negro */
+  font-size: 20px;
+  /* Tamaño de fuente al 150% */
+}
+
+header nav ul li a:hover {
+  color: rgb(31, 235, 235);
+  text-decoration: wavy;
+}
+
+/* SECTIONS */
+
+main section {
+  padding: 15px;
+  background-color: rgb(240, 236, 207);
+  margin: 30px;
+  line-height: 30px;
+}
+
+/* PERSONAJES */
+#personajes img {
+  width: 200px;
+}
+#personajes {
+  padding-top: 25vh;
+  margin: 0px 30px 30px 30px;
+}
+#personajes h2 {
+  align-self: flex-start;
+}
+/* FOOTER */
+footer {
+  background-color: rgb(231, 228, 194);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+footer a img {
+  height: 60px;
+}
+
+footer a .instagram {
+  height: 40px;
+  margin-left: 20px;
+}
+
+@media (min-width: 768px) {
+  /* HEADER */
+  header {
+    height: 18vh;
+  }
+
+  /* PERSONAJES */
+
+  #personajes img {
+    width: 200px;
+  }
+}
+
+@media (min-width: 1200px) {
+  /* HEADER */
+  header {
+    flex-direction: row;
+    align-items: center;
+    /* Alinea verticalmente al centro */
+    padding: 20px;
+    /* Relleno de 20px alrededor del encabezado */
+    height: 20vh;
+  }
+
+  header nav {
+    align-self: flex-end;
+  }
+}
